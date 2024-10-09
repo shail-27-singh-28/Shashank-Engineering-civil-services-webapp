@@ -19,7 +19,7 @@ const Home = () => {
             <div 
             data-aos="zoom-in"
              className="order-1 sm:order-2 relative">
-              {/* <img src={HomeImg} alt="" className="rounded-xl" /> */}
+              <img src={HomeImg} alt="" className="rounded-xl" />
               <div 
               data-aos="slide-right"
               data-aos-delay="300"
