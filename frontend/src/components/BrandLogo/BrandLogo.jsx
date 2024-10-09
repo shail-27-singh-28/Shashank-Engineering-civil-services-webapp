@@ -8,7 +8,7 @@ const BrandLogo = () => {
   return (
     <>
       <div className="dark:bg-gray-900 dark:text-white">
-        <div className="container pb-12 text-center space-y-3">
+        <div className="container pb-10 text-center space-y-3 pt-10">
           <h1
           data-aos="fade-up"
           className="text-3xl font-semibold text-yellow-500 dark:text-primary">Powering next-gen companies</h1>
