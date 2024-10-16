@@ -1,6 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
-import abhinandanimg from "../../assets/images/aboutimg.png";
+import abhinandanimg from "../../assets/images/abhinandan.jpg";
+import dwakrikaimg from "../../assets/images/dwarika.jpg";
+import shivimg from "../../assets/images/shiv.jpg";
 
 const aboutsliderData = [
   {
@@ -17,7 +19,7 @@ const aboutsliderData = [
     text: "The Project Manager (Civil Engineer) oversees the planning and execution of civil engineering projects, ensuring they are completed on time, within budget, and to quality standards.",
     mobileno: "Mobile No: +91 9559302776",
     experience: "Experience: 7+ Years of Experience",
-    img: abhinandanimg,
+    img: dwakrikaimg,
   },
   {
     id: 1,
@@ -25,7 +27,7 @@ const aboutsliderData = [
     text: "A Civil Structural Engineer designs and analyzes structures to ensure safety, stability, and sustainability while collaborating with other engineering professionals.",
     mobileno: "Mobile No: +91 9919460553",
     experience: "Experience: 5+ Years of Experience",
-    img: abhinandanimg,
+    img: shivimg,
   },
 ];
 

@@ -80,31 +80,31 @@ const Footer = () => {
                 <a href="https://www.instagram.com">
                   <FaInstagram
                     className="text-2xl
-                     hover:text-primary duration-300"
+                     hover:text-primary hover:animate-spin duration-300"
                   />
                 </a>
                 <a href="https://www.facebook.com">
                   <FaFacebook
                     className="text-2xl
-                     hover:text-primary duration-300"
+                     hover:text-primary hover:animate-pulse duration-300"
                   />
                 </a>
                 <a href="https://www.linkedin.com">
                   <FaLinkedinIn
                     className="text-2xl
-                     hover:text-primary duration-300"
+                     hover:text-primary hover:animate-bounce duration-300"
                   />
                 </a>
                 <a href="mailto:shashankstructuralrepair@gamil.com">
                   <FaEnvelope
                     className="text-2xl
-                     hover:text-primary duration-300"
+                     hover:text-primary hover:animate-ping duration-300"
                   />
                 </a>
                 <a href="https://api.whatsapp.com/send?phone=9561838950">
                   <FaWhatsapp
                     className="text-2xl
-                     hover:text-primary duration-300"
+                     hover:text-primary hover:animate-pulse duration-300"
                   />
                 </a>
               </div>
