@@ -1,5 +1,5 @@
 import React from "react";
-import "./project.css";
+import "./Blog.css";
 import image1 from "../../assets/images/img1.jpg";
 import image2 from "../../assets/images/img2.jpg";
 import image3 from "../../assets/images/img3.jpg";
@@ -17,11 +17,11 @@ import image14 from "../../assets/images/img14.jpg";
 import image15 from "../../assets/images/img15.jpg";
 import image16 from "../../assets/images/img16.jpg";
 import image17 from "../../assets/images/img17.jpg";
-const Project = () => {
+const Blog = () => {
   return (
     <div className="mainbody">
       <div>
-        <h1 className="projecthead">Projects</h1>
+        <h1 className="projecthead">Our Blogs</h1>
       </div>
       <div className="slider">
         <div className="slide-track">
@@ -81,4 +81,4 @@ const Project = () => {
     </div>
   );
 };
-export default Project;
+export default Blog;

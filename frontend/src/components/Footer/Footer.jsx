@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   FaInstagram,
   FaLinkedinIn,
@@ -10,19 +11,19 @@ import {
 const FooterLinks = [
   {
     title: "About",
-    link: "/#about",
+    link: "/about",
   },
   {
     title: "Features",
-    link: "/#features",
+    link: "/features",
   },
   {
-    title: "Works",
-    link: "/#works",
+    title: "Blog",
+    link: "/blog",
   },
   {
     title: "Career",
-    link: "/#career",
+    link: "/career",
   },
 ];
 const HelpLinks = [
@@ -120,12 +121,17 @@ const Footer = () => {
                   <ul className="space-y-3">
                     {FooterLinks.map((link) => (
                       <li
+
                         key={link.title}
                         className="cursor-pointer hover:translate-x-1 
                         duration-300 hover:text-primary
                         space-x-1 text-gray-400"
                       >
-                        <span>{link.title}</span>
+                        <Link 
+                          to={link.link}>
+                          {link.title}
+                        </Link>
+
                       </li>
                     ))}
                   </ul>

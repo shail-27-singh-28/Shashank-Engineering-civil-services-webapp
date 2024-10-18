@@ -1,18 +1,14 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home.jsx";
-import BrandLogo from "./components/BrandLogo/BrandLogo.jsx";
-import Services from "./components/Services/Services.jsx";
-import AboutSlider from "./components/AboutSlider/AboutSlider.jsx";
-import BlogsComp from "./components/BlogsComp/BlogsComp.jsx";
-import Footer from "./components/Footer/Footer.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Project from "./components/Project/Project.jsx";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Blog from "./components/Blogs/Blog.jsx";
+import BlogsComp from "./components/BlogsComp/BlogsComp.jsx";
 
 const App = () => {
   React.useEffect(() => {
@@ -30,7 +26,9 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/project" element={<Project />} />
+          <Route path="/project" element={<BlogsComp />} />
+          
+          <Route path="/blog" element={<Blog />} />
         </Routes>
       </Router>
     </div>
