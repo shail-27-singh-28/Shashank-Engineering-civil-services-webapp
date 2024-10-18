@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import BlogCard from "./BlogCard";
+import BlogCard from "./ProjectCard";
 import Img1 from "../../assets/BlogsImg/Img1.jpg";
 import Img2 from "../../assets/BlogsImg/Img2.jpg";
 import Img3 from "../../assets/BlogsImg/Img3.jpg";

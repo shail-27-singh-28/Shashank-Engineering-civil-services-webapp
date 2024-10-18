@@ -4,8 +4,8 @@ import background from "../../assets/Video/backgroundvid.mp4";
 import BrandLogo from "../BrandLogo/BrandLogo";
 import Services from "../Services/Services";
 import AboutSlider from "../AboutSlider/AboutSlider";
-import BlogsComp from "../BlogsComp/BlogsComp";
 import Footer from "../Footer/Footer";
+import Project from "../Project/ProjectComp";
 
 const Home = () => {
   return (
@@ -81,7 +81,7 @@ const Home = () => {
       <BrandLogo />
       <Services />
       <AboutSlider />
-      <BlogsComp />
+      <Project />
       <Footer />
     </>
   );
