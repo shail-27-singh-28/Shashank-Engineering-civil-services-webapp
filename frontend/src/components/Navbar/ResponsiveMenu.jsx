@@ -1,5 +1,5 @@
 import React from "react";
-import { FaUserCircle } from "react-icons/fa";
+// import { FaUserCircle } from "react-icons/fa";
 import { MenuLinks } from "./Navbar";
 
 const ResponsiveMenu = ({ showMenu }) => {
@@ -11,13 +11,13 @@ const ResponsiveMenu = ({ showMenu }) => {
     >
       <div className="card">
         {/* User section */}
-        <div className="flex items-center justify-start gap-3">
+        {/* <div className="flex items-center justify-start gap-3">
           <FaUserCircle size={50} />
           <div>
             <h1>Hello User</h1>
             <h1 className="text-sm text-slate-500">Premium user</h1>
           </div>
-        </div>
+        </div> */}
         {/* Menu Section */}
         <nav className="mt-12">
           <ul className="space-y-4 text-xl">

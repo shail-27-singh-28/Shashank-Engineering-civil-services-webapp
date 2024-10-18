@@ -9,6 +9,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Blog from "./components/Blogs/Blog.jsx";
 import Project from "./components/Project/ProjectComp.jsx";
+import Services from "./components/Services/Services.jsx";
 
 const App = () => {
   React.useEffect(() => {
@@ -27,6 +28,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<Project />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/blog" element={<Blog />} />
         </Routes>
       </Router>

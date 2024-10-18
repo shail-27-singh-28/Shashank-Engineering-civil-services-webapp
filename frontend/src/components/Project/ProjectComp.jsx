@@ -89,7 +89,7 @@ const BlogsComp = () => {
         <h1 
           data-aos="fade-up"
           className="my-8 border-l-8 border-primary/50 py-2 pl-2 text-3xl font-semibold">
-          Our Blogs
+          Projects
         </h1>
         {/* Blogs card */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

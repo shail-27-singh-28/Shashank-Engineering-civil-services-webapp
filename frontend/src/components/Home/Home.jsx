@@ -66,7 +66,7 @@ const Home = () => {
                 <div
                   data-aos="slide-right"
                   data-aos-delay="300"
-                  className="bg-white animate-bounce dark:bg-gray-900 px-7 py-2 rounded-xl shadow-md absolute bottom-3 right-3"
+                  className="bg-white animate-bounce dark:bg-gray-900 px-7 py-2 rounded-xl shadow-md absolute bottom-3 right-3 cursor-pointer"
                 >
                   <p>⭐ projects</p>
                   <h1 className="font-bold">

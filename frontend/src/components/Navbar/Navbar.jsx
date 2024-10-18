@@ -42,7 +42,7 @@ const Navbar = () => {
           <div className="flex justify-between">
             {/* logo section */}
             <div>
-              <a href="#" className="flex items-center gap-5">
+              <a href="/" className="flex items-center gap-5">
                 <img src={Logo} alt="Logo" className="w-30 h-16" />
               </a>
             </div>
@@ -54,7 +54,7 @@ const Navbar = () => {
                     <li key={id}>
                       <Link
                         to={link}
-                        className="text-lg font-medium hover:text-primary py-2 hover:border-b-2 hover:border-primary transition-all duration-300"
+                        className="text-xl font-medium hover:text-primary py-2 hover:border-b-2 hover:border-primary transition-all duration-300"
                       >
                         {name}
                       </Link>

@@ -21,10 +21,10 @@ const DarkMode = () => {
     <>
       {theme === "dark" ? (
         <BiSolidSun onClick={() => setTheme("light")}
-         className="text-2xl" />
+         className="text-2xl cursor-pointer hover:animate-pulse " />
       ) : (
         <BiSolidMoon onClick={() => setTheme("dark")}
-         className="text-2xl" />
+         className="text-2xl cursor-pointer hover:animate-spin hover:text-black" />
       )}
     </>
   );
