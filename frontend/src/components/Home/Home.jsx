@@ -1,6 +1,11 @@
 import React from "react";
 // import HomeImg from "../../assets/images/aboutImage.png";
 import background from "../../assets/Video/backgroundvid.mp4";
+import BrandLogo from "../BrandLogo/BrandLogo";
+import Services from "../Services/Services";
+import AboutSlider from "../AboutSlider/AboutSlider";
+import BlogsComp from "../BlogsComp/BlogsComp";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
   return (
@@ -73,6 +78,11 @@ const Home = () => {
           </div>
         </div>
       </main>
+      <BrandLogo />
+      <Services />
+      <AboutSlider />
+      <BlogsComp />
+      <Footer />
     </>
   );
 };

@@ -6,6 +6,8 @@ import Services from "./components/Services/Services.jsx";
 import AboutSlider from "./components/AboutSlider/AboutSlider.jsx";
 import BlogsComp from "./components/BlogsComp/BlogsComp.jsx";
 import Footer from "./components/Footer/Footer.jsx";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Project from "./components/Project/Project.jsx";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -16,23 +18,23 @@ const App = () => {
   React.useEffect(() => {
     AOS.init({
       duration: 800,
-      easing: 'ease-in-out',
+      easing: "ease-in-out",
       offset: 100,
       delay: 100,
     });
     AOS.refresh();
-  },[]);
+  }, []);
   return (
-  <div className="overflow-x-hidden bg-white dark:bg-black duration-300">
-      <Navbar/>
-      <Home />
-      <BrandLogo />
-      <Services />
-      <AboutSlider />
-      <BlogsComp />
-      <Footer />
+    <div className="overflow-x-hidden bg-white dark:bg-black duration-300">
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/project" element={<Project />} />
+        </Routes>
+      </Router>
     </div>
-    );
+  );
 };
 
 export default App;

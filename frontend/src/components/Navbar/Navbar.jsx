@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logoshashank.png";
 import DarkMode from "./DarkMode";
 import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
@@ -8,19 +9,26 @@ export const MenuLinks = [
   {
     id: 1,
     name: "About",
-    link: "#about",
+    link: "/about",
   },
   {
     id: 2,
-    name: "Services",
-    link: "#services",
+    name: "Contact Us",
+    link: "/contact",
   },
   {
     id: 3,
-    name: "Projects",
-    link: "#project",
+    name: "Services",
+    link: "/services",
   },
+  {
+    id: 4,
+    name: "Projects",
+    link: "/project",
+  },
+
 ];
+
 const Navbar = () => {
   const [showMenu, setShowMenu] = React.useState(false);
 
@@ -29,31 +37,31 @@ const Navbar = () => {
   };
   return (
     <>
-      <nav className="bg-white dark:bg-black dark:text-white duration-300">
+      <nav className="bg-[#0B1E59] dark:bg-black dark:text-white text-white h-20 duration-300">
         <div className="container py-3 md:py-2">
           <div className="flex justify-between">
             {/* logo section */}
             <div>
               <a href="#" className="flex items-center gap-5">
-                <img src={Logo} alt="Logo" className="w-30 h-12" />
+                <img src={Logo} alt="Logo" className="w-30 h-16" />
               </a>
             </div>
             {/* NavLink Section */}
             <div className="hidden md:block">
-              <ul className="flex items-center gap-8">
+              <ul className="flex items-center mt-4 gap-14">
                 {MenuLinks.map(({ id, name, link }) => {
                   return (
                     <li key={id}>
-                      <a
-                        href="#"
+                      <Link
+                        to={link}
                         className="text-lg font-medium hover:text-primary py-2 hover:border-b-2 hover:border-primary transition-all duration-300"
                       >
                         {name}
-                      </a>
+                      </Link>
                     </li>
                   );
                 })}
-                <button className="btn-primary">Get in Touch</button>
+                {/* <button className="btn-primary">Get in Touch</button> */}
                 <DarkMode />
               </ul>
             </div>
