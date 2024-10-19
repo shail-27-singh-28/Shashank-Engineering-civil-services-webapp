@@ -10,6 +10,9 @@ import "aos/dist/aos.css";
 import Blog from "./components/Blogs/Blog.jsx";
 import Project from "./components/Project/ProjectComp.jsx";
 import Services from "./components/Services/Services.jsx";
+import About from "./components/About/About.jsx";
+import Footer from "./components/Footer/Footer.jsx";
+import Contact from "./components/Contact/ContactUs.jsx";
 
 const App = () => {
   React.useEffect(() => {
@@ -30,7 +33,11 @@ const App = () => {
           <Route path="/project" element={<Project />} />
           <Route path="/services" element={<Services />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
+
+        <Footer />
       </Router>
     </div>
   );

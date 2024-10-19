@@ -4,7 +4,6 @@ import background from "../../assets/Video/backgroundvid.mp4";
 import BrandLogo from "../BrandLogo/BrandLogo";
 import Services from "../Services/Services";
 import AboutSlider from "../AboutSlider/AboutSlider";
-import Footer from "../Footer/Footer";
 import Project from "../Project/ProjectComp";
 
 const Home = () => {
@@ -47,10 +46,15 @@ const Home = () => {
                   I'm Shashank in the{" "}
                   <span className="text-primary">
                     {" "}
+                   
                     Shashank Engineering civil services
                   </span>
                 </h1>
-                <p data-aos="fade-up" data-aos-delay="300">
+                <p
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  className="text-xl italic font-semibold text-gray-900 dark:text-white"
+                >
                   Innovative Architecture Design Meets Efficient Building
                   Maintenance. Seamless Integration of Design and Maintenance in
                   Modern Architecture Sustainable Building Solutions: Balancing
@@ -82,7 +86,6 @@ const Home = () => {
       <Services />
       <AboutSlider />
       <Project />
-      <Footer />
     </>
   );
 };

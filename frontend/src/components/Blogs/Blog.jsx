@@ -21,7 +21,7 @@ const Blog = () => {
   return (
     <div className="mainbody">
       <div>
-        <h1 className="projecthead">Our Blogs</h1>
+        <h1 className="projecthead dark:text-white">Our Blogs</h1>
       </div>
       <div className="slider">
         <div className="slide-track">
