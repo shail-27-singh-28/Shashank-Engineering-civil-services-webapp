@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { FaBuilding, FaCameraRetro, } from "react-icons/fa";
-import { GiConcreteBag, GiNotebook } from "react-icons/gi";
+import { FaBuilding, } from "react-icons/fa";
+import { GiConcreteBag, } from "react-icons/gi";
 import { PiBuildingsThin } from "react-icons/pi";
 import { CiAlignBottom } from "react-icons/ci";
 import { FaCloudShowersWater } from "react-icons/fa6";
@@ -10,7 +10,7 @@ import { FaFileInvoiceDollar } from "react-icons/fa";
 import { SiCapacitor } from "react-icons/si";
 import { SiAffinitydesigner } from "react-icons/si";
 
-
+// Skills Data
 const skillsData = [
   {
     name: "Building Civil Repair",
@@ -97,64 +97,66 @@ const skillsData = [
 const Services = () => {
   const [showAll, setShowAll] = useState(false);
   const visibleSkills = showAll ? skillsData : skillsData.slice(0, 4);
+
   return (
-    <>
-      <div
-        className="bg-gray-100 dark:bg-black dark:text-white 
-      py-12 sm:grid sm:place-items-center"
-      >
-        <div className="container">
-          {/* Header section */}
-          <div className="pb-12 text-center space-y-3">
-            <h1
-              data-aos="fade-up"
-              className="text-3xl font-semibold
-             text-yellow-500 dark:text-primary"
-            >
-              Explore Our Services
-            </h1>
-            <p data-aos="fade-up" data-aos-delay="300">
-              We provide comprehensive civil engineering services, including
-              structural design, transportation planning, water resource
-              management, and geotechnical analysis. Our focus is on delivering
-              sustainable, efficient, and innovative solutions for
-              infrastructure development.
-            </p>
-          </div>
-          {/* Card section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
-            {visibleSkills.map((skill) => (
-              <div
-                data-aos="fade-up"
-                data-aos-delay={skill.aosDelay}
-                key={skill.name}
-                className="card space-y-3 sm:space-y-4 p-4"
-              >
-                <div>{skill.icon}</div>
-                <h1 className="text-lg font-semibold">{skill.name}</h1>
-                <p className="text-gray-600 dark:text-gray-400">
-                  {skill.description}
-                </p>
-              </div>
-            ))}
-          </div>
-          {/* button section */}
-          <div
+    <div className="bg-gray-100 dark:bg-black dark:text-white py-12 sm:py-16">
+      <div className="container mx-auto px-4 sm:px-8">
+        {/* Header Section */}
+        <div className="pb-12 text-center space-y-3">
+          <h1
             data-aos="fade-up"
-            data-aos-delay="900"
-            data-aos-offset="0"
-            className="text-center mt-4 sm:mt-8"
+            className="text-3xl sm:text-4xl font-semibold text-yellow-500 dark:text-primary"
           >
-            <button 
-            className="btn-primary" 
+            Explore Our Services
+          </h1>
+          <p
+            data-aos="fade-up"
+            data-aos-delay="300"
+            className="text-base sm:text-lg w-11/12 sm:w-3/4 mx-auto"
+          >
+            We provide comprehensive civil engineering services, including
+            structural design, transportation planning, water resource
+            management, and geotechnical analysis. Our focus is on delivering
+            sustainable, efficient, and innovative solutions for infrastructure
+            development.
+          </p>
+        </div>
+
+        {/* Services Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8">
+          {visibleSkills.map((skill) => (
+            <div
+              data-aos="fade-up"
+              data-aos-delay={skill.aosDelay}
+              key={skill.name}
+              className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 space-y-4 hover:shadow-xl transition-shadow"
+            >
+              <div>{skill.icon}</div>
+              <h1 className="text-lg font-semibold">{skill.name}</h1>
+              <p className="text-gray-600 dark:text-gray-400">
+                {skill.description}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        {/* Show More Button */}
+        <div
+          data-aos="fade-up"
+          data-aos-delay="900"
+          className="text-center mt-6 sm:mt-10"
+        >
+          <button
+            className="btn-primary py-2 px-6 text-base font-medium 
+                       bg-yellow-500 text-white hover:bg-yellow-600
+                       rounded-lg shadow-md transition-all"
             onClick={() => setShowAll(!showAll)}
           >
-            {showAll ? "Show Less" : "Learn more"}
+            {showAll ? "Show Less" : "Learn More"}
           </button>
-          </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -26,7 +26,6 @@ export const MenuLinks = [
     name: "Projects",
     link: "/project",
   },
-
 ];
 
 const Navbar = () => {
@@ -35,6 +34,7 @@ const Navbar = () => {
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
+
   return (
     <>
       <nav className="bg-[#0B1E59] dark:bg-black dark:text-white text-white h-20 duration-300">
@@ -61,7 +61,6 @@ const Navbar = () => {
                     </li>
                   );
                 })}
-                {/* <button className="btn-primary">Get in Touch</button> */}
                 <DarkMode />
               </ul>
             </div>
@@ -82,7 +81,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <ResponsiveMenu showMenu={showMenu} />
+        <ResponsiveMenu showMenu={showMenu} toggleMenu={toggleMenu} />
       </nav>
     </>
   );

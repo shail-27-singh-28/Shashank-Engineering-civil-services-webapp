@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // import HomeImg from "../../assets/images/aboutImage.png";
 import background from "../../assets/Video/backgroundvid.mp4";
 import BrandLogo from "../BrandLogo/BrandLogo";
@@ -62,7 +63,7 @@ const Home = () => {
                 >
                   Get Started
                 </button>
-                <div
+                <Link to="../project"
                   data-aos="slide-right"
                   data-aos-delay="300"
                   className="bg-white animate-bounce dark:bg-gray-900 px-7 py-2 rounded-xl shadow-md absolute bottom-3 right-3 cursor-pointer"
@@ -71,7 +72,8 @@ const Home = () => {
                   <h1 className="font-bold">
                     100+ <span className="font-normal">Done</span>
                   </h1>
-                </div>
+                
+                </Link>
               </div>
             </div>
           </div>
