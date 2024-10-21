@@ -1,12 +1,20 @@
 import React, { useState } from "react";
-import { FaCameraRetro } from "react-icons/fa";
-import { GiNotebook } from "react-icons/gi";
-import { SlNote } from "react-icons/sl";
+import { FaBuilding, FaCameraRetro, } from "react-icons/fa";
+import { GiConcreteBag, GiNotebook } from "react-icons/gi";
+import { PiBuildingsThin } from "react-icons/pi";
+import { CiAlignBottom } from "react-icons/ci";
+import { FaCloudShowersWater } from "react-icons/fa6";
+import { MdChangeCircle } from "react-icons/md";
+import { TbCircuitGround } from "react-icons/tb";
+import { FaFileInvoiceDollar } from "react-icons/fa";
+import { SiCapacitor } from "react-icons/si";
+import { SiAffinitydesigner } from "react-icons/si";
+
 
 const skillsData = [
   {
     name: "Building Civil Repair",
-    icon: <FaCameraRetro className="text-4xl text-primary" />,
+    icon: <FaBuilding className="text-4xl text-primary" />,
     link: "#",
     description:
       "Building civil repair involves restoring and maintaining structural components to ensure safety and durability.",
@@ -14,7 +22,7 @@ const skillsData = [
   },
   {
     name: "Building Strengthening",
-    icon: <GiNotebook className="text-4xl text-primary" />,
+    icon: <PiBuildingsThin className="text-4xl text-primary" />,
     link: "#",
     description:
       "Building Strengthening in civil engineering refers to enhancing the load-carrying capacity and stability of a structure to improve its performance and extend its lifespan.",
@@ -22,7 +30,7 @@ const skillsData = [
   },
   {
     name: "Retrofitting of RCC Member",
-    icon: <SlNote className="text-4xl text-primary" />,
+    icon: <CiAlignBottom className="text-4xl text-primary" />,
     link: "#",
     description:
       "Retrofitting of RCC members strengthens and upgrades concrete structures to meet modern safety and performance standards.",
@@ -30,7 +38,7 @@ const skillsData = [
   },
   {
     name: "Hilti anchoring",
-    icon: <SlNote className="text-4xl text-primary" />,
+    icon: <GiConcreteBag className="text-4xl text-primary" />,
     link: "#",
     description:
       "Hilti anchoring in civil engineering refers to the use of Hilti systems for securely fastening structural elements to concrete or masonry.",
@@ -38,7 +46,7 @@ const skillsData = [
   },
   {
     name: "Waterproofing",
-    icon: <FaCameraRetro className="text-4xl text-primary" />,
+    icon: <FaCloudShowersWater className="text-4xl text-primary" />,
     link: "#",
     description:
       "Waterproofing in civil engineering involves applying materials or techniques to prevent water penetration and protect structures from moisture damage.",
@@ -46,7 +54,7 @@ const skillsData = [
   },
   {
     name: "Core Cutting",
-    icon: <GiNotebook className="text-4xl text-primary" />,
+    icon: <MdChangeCircle className="text-4xl text-primary" />,
     link: "#",
     description:
       "Core cutting in civil engineering involves drilling precise cylindrical holes through concrete or masonry for utility installations or structural modifications.",
@@ -54,7 +62,7 @@ const skillsData = [
   },
   {
     name: "Leak Proof injection Grouting",
-    icon: <SlNote className="text-4xl text-primary" />,
+    icon: <TbCircuitGround className="text-4xl text-primary" />,
     link: "#",
     description:
       "Leak-proof injection grouting in civil engineering is a method used to seal cracks and voids in structures by injecting a specialized grout to prevent water infiltration.",
@@ -62,7 +70,7 @@ const skillsData = [
   },
   {
     name: "Estimating",
-    icon: <SlNote className="text-4xl text-primary" />,
+    icon: <FaFileInvoiceDollar className="text-4xl text-primary" />,
     link: "#",
     description:
       "Estimating in civil engineering involves calculating costs, quantities, and resources for construction projects to ensure accurate budgeting and planning.",
@@ -70,7 +78,7 @@ const skillsData = [
   },
   {
     name: "RCC Jacketing for Additional Load",
-    icon: <FaCameraRetro className="text-4xl text-primary" />,
+    icon: <SiCapacitor className="text-4xl text-primary" />,
     link: "#",
     description:
       "RCC jacketing for additional load involves encasing existing concrete members with new concrete and reinforcement to increase their load-bearing capacity.",
@@ -78,7 +86,7 @@ const skillsData = [
   },
   {
     name: "Fabrication works",
-    icon: <FaCameraRetro className="text-4xl text-primary" />,
+    icon: <SiAffinitydesigner className="text-4xl text-primary" />,
     link: "#",
     description:
       "Fabrication works in civil engineering entail manufacturing and assembling structural components to meet design specifications.",
