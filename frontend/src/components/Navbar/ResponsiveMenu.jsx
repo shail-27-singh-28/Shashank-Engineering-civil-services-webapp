@@ -1,6 +1,7 @@
 import React from "react";
 // import { FaUserCircle } from "react-icons/fa";
 import { MenuLinks } from "./Navbar";
+import { Link } from "react-router-dom";
 
 const ResponsiveMenu = ({ showMenu }) => {
   return (
@@ -24,10 +25,10 @@ const ResponsiveMenu = ({ showMenu }) => {
             {MenuLinks.map(({ id, name, link }) => {
               return (
                 <li key={id}>
-                  <a href={link} className="mb-5 inline-block">
+                  <Link to={link} className="mb-5 inline-block">
                     {" "}
                     {name}
-                  </a>
+                  </Link>
                 </li>
               );
             })}
@@ -36,12 +37,11 @@ const ResponsiveMenu = ({ showMenu }) => {
       </div>
       {/* Footer section */}
       <div>
-            <h1>
-                Made with ❤️ by{" "}
-                <a href="https://github.com/shail-27-singh-28">Shailesh Singh
-                </a>{" "}
-            </h1>
-        </div>
+        <h1>
+          Made with ❤️ by{" "}
+          <a href="https://github.com/shail-27-singh-28">Shailesh Singh</a>{" "}
+        </h1>
+      </div>
     </div>
   );
 };

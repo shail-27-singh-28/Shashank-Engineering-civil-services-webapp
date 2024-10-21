@@ -10,7 +10,7 @@ const aboutsliderData = [
     name: "Er. Abhinandan Parjapati - Managing Director (B.E Civil Engineer)",
     text: "The Managing Director (Civil Engineer) leads civil engineering projects, overseeing strategic planning, project execution, and team management to ensure successful outcomes and compliance with industry standards.",
     mobileno: "Mobile No: +91 9561838950",
-    experience: "Experience: 10+ Years of Experience",
+    experience: "Experience: 18+ Years of Experience",
     img: abhinandanimg,
   },
   {
@@ -18,7 +18,7 @@ const aboutsliderData = [
     name: "Er. Dwarika Prajapati - Project Management (Diploma Civil Engineer)",
     text: "The Project Manager (Civil Engineer) oversees the planning and execution of civil engineering projects, ensuring they are completed on time, within budget, and to quality standards.",
     mobileno: "Mobile No: +91 9559302776",
-    experience: "Experience: 7+ Years of Experience",
+    experience: "Experience: 12+ Years of Experience",
     img: dwakrikaimg,
   },
   {

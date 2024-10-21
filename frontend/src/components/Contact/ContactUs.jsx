@@ -1,18 +1,15 @@
 import React from "react";
 import {
   FaEnvelope,
-  FaEvernote,
-  FaLocationArrow,
-  FaMap,
-  FaMapMarkedAlt,
   FaMapMarkerAlt,
-  FaSearchLocation,
 } from "react-icons/fa";
 
 const Contact = () => {
   return (
     <>
-      <h1 data-aos="fade-up" className="text-center pt-12 text-5xl dark:text-white dark:bg-gray-900">Conatct Us</h1>
+    <div>
+      <h1 data-aos="fade-up" className="text-center font-semibold uppercase pt-12 text-5xl dark:text-white dark:bg-gray-900">Contact Us</h1>
+    </div>   
       <section className="flex justify-center items-center dark:bg-gray-900 bg-white h-[70vh] py-10">
         <div className="border-2 border-gray-500 flex flex-col md:flex-row bg-white rounded-lg shadow-lg max-w-6xl w-full overflow-hidden">
           <div data-aos="fade-up" data-aos-delay="300" className="flex-1 p-4 dark:text-white dark:bg-gray-500">

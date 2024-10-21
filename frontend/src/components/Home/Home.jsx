@@ -41,14 +41,9 @@ const Home = () => {
               <div className="space-y-5 order-2 sm:order-1 xl:pr-40">
                 <h1
                   data-aos="fade-up"
-                  className="text-4xl sm:text-5xl font-semibold"
+                  className="text-4xl sm:text-5xl font-semibold uppercase text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%"
                 >
-                  I'm Shashank in the{" "}
-                  <span className="text-primary">
-                    {" "}
-                   
-                    Shashank Engineering civil services
-                  </span>
+                 Shashank Engineering civil services
                 </h1>
                 <p
                   data-aos="fade-up"

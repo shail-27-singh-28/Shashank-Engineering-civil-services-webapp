@@ -29,34 +29,34 @@ const FooterLinks = [
 const HelpLinks = [
   {
     title: "Customer Support",
-    link: "/#support",
+    link: "/support",
   },
   {
     title: "Delivery Detailes",
-    link: "/#delivery-details",
+    link: "/delivery-details",
   },
   {
     title: "Terms & Conditions",
-    link: "/#terms",
+    link: "/terms",
   },
   {
     title: "Privacy Policy",
-    link: "/#privacy",
+    link: "/privacy",
   },
 ];
 const ResourcesLinks = [
-    {
-      title: "Resources",
-      link: "/#resources",
-    },
-    {
-      title: "Resources2",
-      link: "/#resources2",
-    },
-    {
-      title: "Resources3",
-      link: "/#resources3",
-    },
+  {
+    title: "Resources",
+    link: "/resources",
+  },
+  {
+    title: "Resources2",
+    link: "/resources2",
+  },
+  {
+    title: "Resources3",
+    link: "/resources3",
+  },
 ];
 const Footer = () => {
   return (
@@ -73,11 +73,13 @@ const Footer = () => {
                 Shashank Engineering Civil Services
               </h1>
               <p>
-              Revolutionary architecture combines smart design with easy maintenance for sustainable buildings.{" "}
+                Revolutionary architecture combines smart design with easy
+                maintenance for sustainable buildings.{" "}
               </p>
               <br />
               {/* Social Links */}
               <div className="flex items-center gap-4 mt-6">
+                Reach out to Us at
                 <a href="https://www.instagram.com">
                   <FaInstagram
                     className="text-2xl
@@ -111,27 +113,23 @@ const Footer = () => {
               </div>
             </div>
             {/* Link section */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 
-            col-span-2 md:pl-10">
-                {/* First col */}
+            <div
+              className="grid grid-cols-2 sm:grid-cols-3 
+            col-span-2 md:pl-10"
+            >
+              {/* First col */}
               <div>
                 <div className="py-8 px-4">
-                  <h1 className="text-xl font-bold mb-3">
-                    Company</h1>
+                  <h1 className="text-xl font-bold mb-3">Company</h1>
                   <ul className="space-y-3">
                     {FooterLinks.map((link) => (
                       <li
-
                         key={link.title}
                         className="cursor-pointer hover:translate-x-1 
                         duration-300 hover:text-primary
                         space-x-1 text-gray-400"
                       >
-                        <Link 
-                          to={link.link}>
-                          {link.title}
-                        </Link>
-
+                        <Link to={link.link}>{link.title}</Link>
                       </li>
                     ))}
                   </ul>
@@ -140,8 +138,7 @@ const Footer = () => {
               {/* Second col */}
               <div>
                 <div className="py-8 px-4">
-                  <h1 className="text-xl font-bold mb-3">
-                    Help</h1>
+                  <h1 className="text-xl font-bold mb-3">Help</h1>
                   <ul className="space-y-3">
                     {HelpLinks.map((link) => (
                       <li
@@ -150,17 +147,16 @@ const Footer = () => {
                         duration-300 hover:text-primary
                         space-x-1 text-gray-400"
                       >
-                        <span>{link.title}</span>
+                        <Link to={link.link}>{link.title}</Link>
                       </li>
                     ))}
                   </ul>
                 </div>
               </div>
-               {/* third col */}
-               <div>
+              {/* third col */}
+              <div>
                 <div className="py-8 px-4">
-                  <h1 className="text-xl font-bold mb-3">
-                    Resources</h1>
+                  <h1 className="text-xl font-bold mb-3">Resources</h1>
                   <ul className="space-y-3">
                     {ResourcesLinks.map((link) => (
                       <li
@@ -169,7 +165,7 @@ const Footer = () => {
                         duration-300 hover:text-primary
                         space-x-1 text-gray-400"
                       >
-                        <span>{link.title}</span>
+                        <Link to={link.link}>{link.title}</Link>
                       </li>
                     ))}
                   </ul>

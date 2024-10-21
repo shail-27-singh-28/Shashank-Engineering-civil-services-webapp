@@ -1,43 +1,94 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaCameraRetro } from "react-icons/fa";
 import { GiNotebook } from "react-icons/gi";
 import { SlNote } from "react-icons/sl";
 
 const skillsData = [
   {
-    name: "Structural Repair & Strengthening",
+    name: "Building Civil Repair",
     icon: <FaCameraRetro className="text-4xl text-primary" />,
     link: "#",
     description:
-      "Structural repair restores damage, while strengthening improves a structure's capacity to ensure safety and longevity.",
+      "Building civil repair involves restoring and maintaining structural components to ensure safety and durability.",
     aosDelay: "0",
   },
   {
-    name: "corrosion study & cathodic protection",
+    name: "Building Strengthening",
     icon: <GiNotebook className="text-4xl text-primary" />,
     link: "#",
     description:
-      "Corrosion studies analyze material degradation, while cathodic protection prevents it by making metal surfaces the cathode in an electrochemical cell.",
+      "Building Strengthening in civil engineering refers to enhancing the load-carrying capacity and stability of a structure to improve its performance and extend its lifespan.",
     aosDelay: "300",
   },
   {
-    name: "Retrofitting & Jacketing",
+    name: "Retrofitting of RCC Member",
     icon: <SlNote className="text-4xl text-primary" />,
     link: "#",
     description:
-      "Retrofitting involves strengthening or upgrading existing structures, while jacketing is a specific technique used to reinforce columns or beams by encasing them in additional material.",
+      "Retrofitting of RCC members strengthens and upgrades concrete structures to meet modern safety and performance standards.",
     aosDelay: "500",
   },
   {
-    name: "Retrofitting & Jacketing",
+    name: "Hilti anchoring",
     icon: <SlNote className="text-4xl text-primary" />,
     link: "#",
     description:
-      "Lorem ipsum dolor sit amet consectetur aditi nscbs sdjbhvf fdjbsjn fdjsb njfb fdjb",
+      "Hilti anchoring in civil engineering refers to the use of Hilti systems for securely fastening structural elements to concrete or masonry.",
     aosDelay: "700",
   },
+  {
+    name: "Waterproofing",
+    icon: <FaCameraRetro className="text-4xl text-primary" />,
+    link: "#",
+    description:
+      "Waterproofing in civil engineering involves applying materials or techniques to prevent water penetration and protect structures from moisture damage.",
+    aosDelay: "0",
+  },
+  {
+    name: "Core Cutting",
+    icon: <GiNotebook className="text-4xl text-primary" />,
+    link: "#",
+    description:
+      "Core cutting in civil engineering involves drilling precise cylindrical holes through concrete or masonry for utility installations or structural modifications.",
+    aosDelay: "300",
+  },
+  {
+    name: "Leak Proof injection Grouting",
+    icon: <SlNote className="text-4xl text-primary" />,
+    link: "#",
+    description:
+      "Leak-proof injection grouting in civil engineering is a method used to seal cracks and voids in structures by injecting a specialized grout to prevent water infiltration.",
+    aosDelay: "500",
+  },
+  {
+    name: "Estimating",
+    icon: <SlNote className="text-4xl text-primary" />,
+    link: "#",
+    description:
+      "Estimating in civil engineering involves calculating costs, quantities, and resources for construction projects to ensure accurate budgeting and planning.",
+    aosDelay: "700",
+  },
+  {
+    name: "RCC Jacketing for Additional Load",
+    icon: <FaCameraRetro className="text-4xl text-primary" />,
+    link: "#",
+    description:
+      "RCC jacketing for additional load involves encasing existing concrete members with new concrete and reinforcement to increase their load-bearing capacity.",
+    aosDelay: "0",
+  },
+  {
+    name: "Fabrication works",
+    icon: <FaCameraRetro className="text-4xl text-primary" />,
+    link: "#",
+    description:
+      "Fabrication works in civil engineering entail manufacturing and assembling structural components to meet design specifications.",
+    aosDelay: "300",
+  }
 ];
+
 const Services = () => {
+  const [showAll, setShowAll] = useState(false);
+  const visibleSkills = showAll ? skillsData : skillsData.slice(0, 4);
   return (
     <>
       <div
@@ -64,7 +115,7 @@ const Services = () => {
           </div>
           {/* Card section */}
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
-            {skillsData.map((skill) => (
+            {visibleSkills.map((skill) => (
               <div
                 data-aos="fade-up"
                 data-aos-delay={skill.aosDelay}
@@ -86,7 +137,12 @@ const Services = () => {
             data-aos-offset="0"
             className="text-center mt-4 sm:mt-8"
           >
-            <button className="btn-primary">Learn More</button>
+            <button 
+            className="btn-primary" 
+            onClick={() => setShowAll(!showAll)}
+          >
+            {showAll ? "Show Less" : "Learn more"}
+          </button>
           </div>
         </div>
       </div>
