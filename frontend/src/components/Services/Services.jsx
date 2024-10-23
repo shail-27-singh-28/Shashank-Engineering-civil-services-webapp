@@ -129,7 +129,7 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-delay={skill.aosDelay}
               key={skill.name}
-              className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 space-y-4 hover:shadow-xl transition-shadow"
+              className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 space-y-4 hover:shadow-xl transition-shadow hover:bg-blue-100"
             >
               <div>{skill.icon}</div>
               <h1 className="text-lg font-semibold">{skill.name}</h1>

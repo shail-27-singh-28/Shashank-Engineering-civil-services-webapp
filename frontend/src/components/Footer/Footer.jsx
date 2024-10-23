@@ -14,8 +14,8 @@ const FooterLinks = [
     link: "/about",
   },
   {
-    title: "Features",
-    link: "/features",
+    title: "Contact Us",
+    link: "/contact",
   },
   {
     title: "Blog",
